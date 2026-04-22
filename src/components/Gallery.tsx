@@ -32,7 +32,7 @@ export default function Gallery({ artworks, category }: { artworks: Artwork[], c
         </motion.div>
       </AnimatePresence>
 
-      {artworks.length === 0 && category !== 'Contact' && (
+      {artworks.length === 0 && (
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}

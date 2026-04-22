@@ -57,7 +57,9 @@ export default function App() {
         />
         
         <main className="w-full lg:pl-64">
-          <Gallery artworks={filteredArtworks} category={activeCategory} />
+          {activeCategory !== 'Over ons' && (
+            <Gallery artworks={filteredArtworks} category={activeCategory} />
+          )}
 
           {activeCategory === 'Over ons' && (
             <motion.div 
